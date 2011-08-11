@@ -27,7 +27,7 @@ describe Micropost do
     end
   end
 
-describe "validations" do
+  describe "validations" do
 
     it "should require a user id" do
       Micropost.new(@attr).should_not be_valid
