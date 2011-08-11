@@ -3,11 +3,22 @@
   width: 710px;
 }
 
+	
 body {
- /* background: #cff;*/
-  background-image:url('blue_line_background.jpg');
+        background: url('ubuntu_prettified_background.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+/*body {
+  background: #cff;
+  background-image:url('ubuntu_prettified_background.gif');
   background-attachment:fixed;
 }
+ */
+
 
 header {
   padding-top: 20px;
@@ -15,18 +26,26 @@ header {
 
 header img {
   padding: 1em;
-  /*background: #fff;*/
+  background: #fff; 
+  max-width:100px;
+  
 }
 
 section {
   margin-top: 1em;
   font-size: 120%;
   padding: 20px;
-  background: #fff;
+  background:#FFF;
+  zoom: 1;
+  filter: alpha(opacity=70);
+  opacity:0.8;
+
 }
 
 section h1 {
-  font-size: 200%;
+  font-size: 150%;
+  text-align: center;
+  padding: 20px;
 }
 
 /* Links */
@@ -54,6 +73,9 @@ nav {
   background-color: white;
   padding: 0 0.7em;
   white-space: nowrap;
+    zoom: 1;
+  filter: alpha(opacity=70);
+  opacity:0.8;
 }
 
 nav ul {
@@ -186,4 +208,60 @@ ul.users {
 .users li {
   list-style: none;
 }
+
+h1.micropost {
+  margin-bottom: 0.3em;
+}
+
+table.microposts {
+  margin-top: 1em;
+}
+
+table.microposts tr {
+  height: 70px;
+}
+
+table.microposts tr td.gravatar {
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+  width: 50px;
+}
+
+table.microposts tr td.micropost {
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+  padding-top: 10px;
+}
+
+table.microposts tr td.micropost span.timestamp {
+  display: block;
+  font-size: 85%;
+  color: #666;
+}
+
+div.user_info img {
+  padding-right: 0.1em;
+}
+
+div.user_info a {
+  text-decoration: none;
+}
+
+div.user_info span.user_name {
+  position: absolute;
+}
+
+div.user_info span.microposts {
+  font-size: 80%;
+}
+
+form.new_micropost {
+  margin-bottom: 2em;
+}
+
+form.new_micropost textarea {
+  height: 4em;
+  margin-bottom: 0;
+}
+
 
